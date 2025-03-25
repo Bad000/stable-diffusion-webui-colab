@@ -24,4 +24,6 @@ httpx==0.24.1
 httpcore==0.16.3
 # bitsandbytes — УДАЛЁН, так как вызывает ошибку без GPU
 # pydantic — НЕ УКАЗЫВАЕМ, так как fastapi требует <2.0, а transformers требует >=2.0
-# лучше пусть устанавливается автоматически подходящая версия
+# !pip uninstall -y jax jaxlib flax bitsandbytes
+# !pip install numpy==1.26.4 --force-reinstall
+
