@@ -25,5 +25,8 @@ httpcore==0.16.3
 # bitsandbytes — УДАЛЁН, так как вызывает ошибку без GPU
 # pydantic — НЕ УКАЗЫВАЕМ, так как fastapi требует <2.0, а transformers требует >=2.0
 # !pip uninstall -y jax jaxlib flax bitsandbytes
+# Мы намеренно не используем jax, flax, dopamine-rl, optax, chex, т.к. они для TPU или RL-обучения.
+# У нас используется transformers==4.29.2, и это нормально для Stable Diffusion.
+# pydantic==1.10.21 совместим с fastapi==0.94.0 — тоже хорошо.
 # !pip install numpy==1.26.4 --force-reinstall
 
