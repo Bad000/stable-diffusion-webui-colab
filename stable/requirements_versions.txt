@@ -1,4 +1,4 @@
-# 💡 Очищено от конфликтов и дубликатов
+# 💡 Очищено от конфликтов
 
 accelerate==0.21.0
 einops==0.4.1
@@ -20,19 +20,16 @@ torchsde==0.2.6
 httpx==0.24.1
 httpcore==0.16.3
 huggingface_hub==0.11.1
+
 # wandb
 # transformers==4.29.2
 # diffusers==0.11.1
 # gradio==3.32.0
 # fastapi==0.94.0
 # bitsandbytes — УДАЛЁН, так как вызывает ошибку без GPU
-# pydantic — НЕ УКАЗЫВАЕМ, так как fastapi требует <2.0, а transformers требует >=2.0
-# !pip uninstall -y jax jaxlib flax bitsandbytes
+# pydantic==1.10.21 — НЕ УКАЗЫВАЕМ, так как fastapi требует <2.0, а transformers требует >=2.0
+
 # Сейчас gradio и fastapi требуют старую версию pydantic (<2.0),
 # а wandb, transformers и diffusers требуют новую версию pydantic (>=2.0).
 
 # Мы намеренно не используем jax, flax, dopamine-rl, optax, chex, т.к. они для TPU или RL-обучения.
-# У нас используется transformers==4.29.2, и это нормально для Stable Diffusion.
-# pydantic==1.10.21 совместим с fastapi==0.94.0 — тоже хорошо.
-# !pip install numpy==1.26.4 --force-reinstall
-
