@@ -19,8 +19,10 @@ xformers==0.0.20
 torchsde==0.2.6
 httpx==0.24.1
 httpcore==0.16.3
+# wandb
 # transformers==4.29.2
 # diffusers==0.11.1
+# gradio==3.32.0
 # fastapi==0.94.0
 # bitsandbytes — УДАЛЁН, так как вызывает ошибку без GPU
 # pydantic — НЕ УКАЗЫВАЕМ, так как fastapi требует <2.0, а transformers требует >=2.0
