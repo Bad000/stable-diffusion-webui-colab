@@ -19,14 +19,17 @@ xformers==0.0.20
 torchsde==0.2.6
 httpx==0.24.1
 httpcore==0.16.3
+
 # huggingface_hub==0.11.1
 huggingface_hub==0.29.3
 
-diffusers==0.22.1
+# diffusers==0.11.1
+# diffusers==0.22.1
+diffusers==0.25.0
 
 # wandb
 # transformers==4.29.2
-# diffusers==0.11.1
+
 # gradio==3.32.0
 # fastapi==0.94.0
 # bitsandbytes — УДАЛЁН, так как вызывает ошибку без GPU
